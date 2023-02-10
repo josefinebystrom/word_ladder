@@ -40,10 +40,11 @@ def verify_word_ladder(ladder):
     >>> verify_word_ladder(['stone', 'shone', 'phony'])
     False
     '''
-    for i in range(len(ladder)):
-        if not _adjacent(word[i],word[i+1]):
+    for i in range(len(ladder) - 1):
+        if not _adjacent(ladder[i], ladder[i + 1]):
             return False
     return True
+
 
 def _adjacent(word1, word2):
     '''
