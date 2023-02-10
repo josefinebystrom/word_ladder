@@ -57,7 +57,7 @@ def _adjacent(word1, word2):
     False
     '''
     count = 0
-    for i in range(len(word1)):
+    for i in range(len(word1) - 1):
         if word1[i] != word2[i]:
             count += 1
     if count == 1:
