@@ -64,7 +64,7 @@ def verify_word_ladder(ladder):
     >>> verify_word_ladder(['stone', 'shone', 'phony'])
     False
     '''
-    if ladder == [] or ladder == None:
+    if ladder == [] or ladder is None:
         return False
     if len(ladder) == 1:
         return True
@@ -94,5 +94,3 @@ def _adjacent(word1, word2):
         return True
     else:
         return False
-
-print(word_ladder('stone','phone'))
